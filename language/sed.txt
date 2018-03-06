@@ -1,0 +1,3 @@
+s/PLG_CONTENT_SERMONSPEAKER/PLG_CONTENT_SERMONPLAYER/g
+s/{sermonspeaker/{sermonplayer/g
+s/- SermonSpeaker\"/- SermonSpeaker (Player)\"/g

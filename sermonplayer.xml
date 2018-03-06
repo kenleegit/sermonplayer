@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.0" type="plugin" group="content" method="upgrade">
+	<name>plg_content_sermonplayer</name>
+	<author>Ken Lee</author>
+	<creationDate>2018-03-6</creationDate>
+	<copyright>© 2018</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>itdept@febchk.org</authorEmail>
+	<authorUrl>http://www.febchk.org</authorUrl>
+	<version>0.0.8</version>
+	<description>PLG_CONTENT_SERMONPLAYER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="sermonplayer">sermonplayer.php</filename>
+		<folder>language</folder>
+	</files>
+	<!--<updateservers>
+		<server type="extension" priority="1" name="SermonSpeaker.net">http://www.sermonspeaker.net/update/plg_content_sermonspeaker.xml</server>
+	</updateservers>
+	-->
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="mode" type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_CONTENT_SERMONPLAYER_FIELD_MODE_LABEL"
+					description="PLG_CONTENT_SERMONPLAYER_FIELD_MODE_DESC" >
+					<option value="1">PLG_CONTENT_SERMONPLAYER_FIELD_MODE_OPTION_LINK</option>
+					<option value="2">PLG_CONTENT_SERMONPLAYER_FIELD_MODE_OPTION_PLAYER</option>
+					<option value="3">PLG_CONTENT_SERMONPLAYER_FIELD_MODE_OPTION_MODULE</option>
+				</field>
+				<field
+					name="style"
+					type="text"
+					label="PLG_CONTENT_SERMONPLAYER_FIELD_STYLE_LABEL"
+					description="PLG_CONTENT_SERMONPLAYER_FIELD_STYLE_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="PLG_CONTENT_SERMONPLAYER_FIELD_MODULECLASS_SFX_LABEL"
+					description="PLG_CONTENT_SERMONPLAYER_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="show_player" type="radio"
+					default="0"
+					class="btn-group btn-group-yesno"
+					label="PLG_CONTENT_SERMONPLAYER_FIELD_SHOW_PLAYER_LABEL"
+					description="PLG_CONTENT_SERMONPLAYER_FIELD_SHOW_PLAYER_DESC" >
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
